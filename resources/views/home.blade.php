@@ -115,13 +115,51 @@
         <input name="uf" type="text" class="form-control" id="uf" size="2" /></label><br />
         <label>IBGE:
         <input name="ibge" type="text" class="form-control" id="ibge" size="8" /></label><br />
+         <hr>
       </form>
       
+
+       <form  method="get" action="/rastreio">
+    <label>Digite o código de rastreio:
+        <input name="codigo" type="text" class="form-control" id="rastreio" size="60" /></label><br />      
+        <button class="btn btn-secondary" type="submit">Buscar</button>
+    </form>
+
     </body>
 
     </html>
 
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
         </div>
     </div>

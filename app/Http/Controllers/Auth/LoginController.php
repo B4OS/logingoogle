@@ -41,9 +41,9 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    public function redirectToProvider(Request $request)
+    public function redirectToProvider(Request $request) // 
     {
-        $usu = \App\Models\User::where('email',$request['email'])->first();
+        $usu = \App\Models\User::where('email',$request['email'])->first(); 
 
       if ($usu==null) { 
         $usu = new \App\Models\User;
@@ -65,7 +65,11 @@ class LoginController extends Controller
     {
         $user = Socialite::driver('github')->user();
         dd($user);
+
+
         // $user->token;
     }
+
+    
 
 }

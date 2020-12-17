@@ -22,3 +22,4 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/logingoogle', [App\Http\Controllers\Auth\LoginController::class, 'redirectToProvider']);
 Route::get('/callbackgoogle', [App\Http\Controllers\Auth\LoginController::class, 'handleProviderCallback']);
+Route::get('/rastreio', [App\Http\Controllers\HomeController::class, 'rastreio']);
